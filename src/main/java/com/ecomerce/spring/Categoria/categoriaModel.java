@@ -17,5 +17,6 @@ public class categoriaModel {
     private String urlImg;
 
     @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "categoria_id")
     private List<productoModel> producto;
 }

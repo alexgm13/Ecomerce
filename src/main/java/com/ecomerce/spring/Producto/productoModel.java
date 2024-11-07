@@ -1,13 +1,11 @@
 package com.ecomerce.spring.Producto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Data
+@Table(name = "producto")
 public class productoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
